@@ -1,0 +1,24 @@
+.navBox{
+
+    width: 100vw;
+}
+
+.navbar-header {
+    background-color: #F16E10;
+  }
+
+.profileBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    color: lightgray;
+}
+
+.profileBtn:hover{
+    color: white;
+}
+
+.custom-navbar{
+    background-color: red;
+}

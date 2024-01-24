@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Sans:wght@500&display=swap');
+
+
+.postform{
+    background-color: rgba(186, 255, 198, 0.466);
+    width: 600px;
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    padding-top: 30px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+
+.titleSign{
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+}
+

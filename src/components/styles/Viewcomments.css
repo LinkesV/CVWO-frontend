@@ -1,0 +1,16 @@
+.hidden{
+    display: none;
+}
+
+.com{
+    width: 40vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    padding: 10px;
+    
+}
+
+.comBody{
+    width: 35vw;
+}

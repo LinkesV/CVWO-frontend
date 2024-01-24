@@ -1,0 +1,32 @@
+.hidden{
+    display: none;
+}
+
+.postBox{
+    border: 1mm solid black;
+    margin-top: 10px;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 150px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+}
+
+.postBox:hover{
+    border: 1mm solid grey;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    width: 705px;
+    
+}
+
+.authButton{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 20px;
+    min-width: 100px
+
+}
