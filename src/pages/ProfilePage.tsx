@@ -18,7 +18,7 @@ function ProfilePage() {
   const [updateProfile,setUpdateProfile] = useState(false);
   const dispatch = useDispatch();
 
-  const [username,setUsername] = useState<string>(currentuser.username);
+  const [email,setEmail] = useState<string>(currentuser.email);
   const [pfp,setpfp] = useState<string>(currentuser.pfp);
   const [aboutme,setAboutme] = useState<string>(currentuser.aboutyou);
  
@@ -39,7 +39,7 @@ function ProfilePage() {
       credentials: 'include',
       headers:requestHeaders,
       body: JSON.stringify({
-        username:username,
+        email:email,
         pfp:pfp,
         aboutyou:aboutme
       })
@@ -87,8 +87,8 @@ const cancelHandler = (e:React.FormEvent):void => {
         <h3 className='titleSign'>Update Profile</h3>
         <Form style={{display:"flex", flexDirection:"column"}}>
         <Form.Group className="mb-3" controlId="formTitle">
-          <Form.Label>Username: </Form.Label>
-          <Form.Control type="title" placeholder="Enter your username" onChange={(e)=>setUsername(e.target.value)} style={{width:"500px"}}/>
+          <Form.Label>Email: </Form.Label>
+          <Form.Control type="title" placeholder="Enter your email" onChange={(e)=>setEmail(e.target.value)} style={{width:"500px"}}/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formTitle">

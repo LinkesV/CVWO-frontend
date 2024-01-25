@@ -5,7 +5,8 @@ type userLoggedinChecker = {
     userid: number | null,
     username : string,
     pfp: string,
-    aboutyou: string
+    aboutyou: string,
+    email:string
 }
 
 const initialState: userLoggedinChecker = {
@@ -13,7 +14,8 @@ const initialState: userLoggedinChecker = {
     userid: 0,
     username : '',
     pfp: '',
-    aboutyou: ''
+    aboutyou: '',
+    email:''
 };
 
 const userSlice = createSlice({
@@ -25,7 +27,8 @@ const userSlice = createSlice({
             state.userid = action.payload.id;
             state.username = action.payload.username;
             state.aboutyou = action.payload.aboutyou;
-            state.pfp = action.payload.pfp
+            state.pfp = action.payload.pfp;
+            state.email = action.payload.email;
         },
         clearuser(state) {
             state.authorized = false;
@@ -33,9 +36,10 @@ const userSlice = createSlice({
             state.username = '';
             state.aboutyou = '';
             state.pfp = '';
+            state.email = '';
         },
         updateuser(state,action) {
-            state.username = action.payload.username;
+            state.email = action.payload.email;
             state.aboutyou = action.payload.aboutyou;
             state.pfp = action.payload.pfp;
         }
