@@ -43,9 +43,9 @@ function SignUp() {
          if(check){
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
+            requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
 
-          fetch("http://localhost:5000/register", {
+          fetch("https://mysite-bg8a.onrender.com/register", {
             method: "POST", 
             credentials: 'include',
             headers: requestHeaders,

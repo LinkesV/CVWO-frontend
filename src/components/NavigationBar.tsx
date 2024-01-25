@@ -23,7 +23,7 @@ function NavigationBar() {
     
     const navigate: NavigateFunction = useNavigate();
     const logoutHandler = ()=>{
-        fetch("http://localhost:5000/logout", {
+        fetch("https://mysite-bg8a.onrender.com/logout", {
         method: "GET", 
         credentials: 'include',
         headers:{
@@ -39,9 +39,9 @@ function NavigationBar() {
 
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set('Content-Type', 'application/json');
-    requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
+    requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
     useEffect(()=>{
-      fetch("http://localhost:5000/forum_threads", {
+      fetch("https://mysite-bg8a.onrender.com/forum_threads", {
       method: "GET", 
       credentials: 'include',
       headers:requestHeaders,

@@ -32,10 +32,10 @@ function PostForm() {
         try{
           const requestHeaders: HeadersInit = new Headers();
           requestHeaders.set('Content-Type', 'application/json');
-          requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
+          requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
           
 
-        fetch("http://localhost:5000/forum_threads", {
+        fetch("https://mysite-bg8a.onrender.com/forum_threads", {
           method: "POST", 
           credentials: 'include',
           headers:requestHeaders,

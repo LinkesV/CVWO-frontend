@@ -26,10 +26,10 @@ function Post({title,username,userid,currentuser,post_id, category}: hello) {
       try{
           const requestHeaders: HeadersInit = new Headers();
           requestHeaders.set('Content-Type', 'application/json');
-          requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
+          requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
        
 
-        fetch(`http://localhost:5000/deletepost`, {
+        fetch(`https://mysite-bg8a.onrender.com/deletepost`, {
           method: "DELETE", 
           credentials: 'include',
           headers:requestHeaders,
