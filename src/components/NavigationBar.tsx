@@ -23,7 +23,7 @@ function NavigationBar() {
     
     const navigate: NavigateFunction = useNavigate();
     const logoutHandler = ()=>{
-        fetch("https://mysite-bg8a.onrender.com/logout", {
+        fetch("https://cvwo-backendserver.onrender.com/logout", {
         method: "GET", 
         credentials: 'include',
         headers:{
@@ -39,9 +39,9 @@ function NavigationBar() {
 
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set('Content-Type', 'application/json');
-    requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+    requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
     useEffect(()=>{
-      fetch("https://mysite-bg8a.onrender.com/forum_threads", {
+      fetch("https://cvwo-backendserver.onrender.com/forum_threads", {
       method: "GET", 
       credentials: 'include',
       headers:requestHeaders,

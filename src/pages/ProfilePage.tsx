@@ -31,10 +31,10 @@ function ProfilePage() {
     try{
       const requestHeaders: HeadersInit = new Headers();
       requestHeaders.set('Content-Type', 'application/json');
-      requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+      requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
       // requestHeaders.set("Access-Control-Allow-Credentials",'true');
 
-    fetch(`https://mysite-bg8a.onrender.com/users/${currentuser.userid}`, {
+    fetch(`https://cvwo-backendserver.onrender.com/users/${currentuser.userid}`, {
       method: "PUT", 
       credentials: 'include',
       headers:requestHeaders,

@@ -26,7 +26,7 @@ function App() {
     try{
        
       
-       fetch("https://mysite-bg8a.onrender.com/authenticate_user", {
+       fetch("https://cvwo-backendserver.onrender.com/authenticate_user", {
         method: "GET", 
         credentials: 'include',
         headers:{'Content-Type': 'application/json',

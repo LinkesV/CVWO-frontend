@@ -13,11 +13,11 @@ function ViewPost() {
   const dispatch = useDispatch();
   const requestHeaders: HeadersInit = new Headers();
   requestHeaders.set('Content-Type', 'application/json');
-  requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+  requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
 
   useEffect(()=>{
     try{
-      fetch("https://mysite-bg8a.onrender.com/comments", {
+      fetch("https://cvwo-backendserver.onrender.com/comments", {
         method: "GET", 
         credentials: 'include',
         headers:requestHeaders,

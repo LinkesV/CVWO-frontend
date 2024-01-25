@@ -31,10 +31,10 @@ function CreateComment() {
           try{
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+            requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
             
   
-          fetch("https://mysite-bg8a.onrender.com/comments", {
+          fetch("https://cvwo-backendserver.onrender.com/comments", {
             method: "POST", 
             credentials: 'include',
             headers:requestHeaders,

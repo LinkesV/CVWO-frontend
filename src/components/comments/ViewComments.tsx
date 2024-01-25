@@ -17,7 +17,7 @@ function ViewComments() {
 
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set('Content-Type', 'application/json');
-    requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+    requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
 
     const select:TypedUseSelectorHook<RootState> = useSelector;
     const currentuser = select(state=>(state.user.userid));
@@ -32,10 +32,10 @@ function ViewComments() {
       try{
           const requestHeaders: HeadersInit = new Headers();
           requestHeaders.set('Content-Type', 'application/json');
-          requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+          requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
        
 
-        fetch(`https://mysite-bg8a.onrender.com/comments/${comment_id}`, {
+        fetch(`https://cvwo-backendserver.onrender.com/comments/${comment_id}`, {
           method: "DELETE", 
           credentials: 'include',
           headers:requestHeaders,
@@ -62,9 +62,9 @@ function ViewComments() {
         try{
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','https://mysite-bg8a.onrender.com');
+            requestHeaders.set('Access-Control-Allow-Origin','https://cvwo-backendserver.onrender.com');
   
-          fetch(`https://mysite-bg8a.onrender.com/comments/${comment_id}`, {
+          fetch(`https://cvwo-backendserver.onrender.com/comments/${comment_id}`, {
             method: "PUT", 
             credentials: 'include',
             headers:requestHeaders,
