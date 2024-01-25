@@ -31,10 +31,10 @@ function CreateComment() {
           try{
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
             
   
-          fetch("http://localhost:4000/comments", {
+          fetch("http://localhost:5000/comments", {
             method: "POST", 
             credentials: 'include',
             headers:requestHeaders,

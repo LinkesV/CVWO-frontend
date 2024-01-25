@@ -34,10 +34,10 @@ function UpdatePost() {
           try{
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
             // requestHeaders.set("Access-Control-Allow-Credentials",'true');
   
-          fetch(`http://localhost:4000/forum_threads/${post_id}`, {
+          fetch(`http://localhost:5000/forum_threads/${post_id}`, {
             method: "PUT", 
             credentials: 'include',
             headers:requestHeaders,

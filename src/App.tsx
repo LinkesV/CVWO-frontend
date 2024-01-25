@@ -26,7 +26,7 @@ function App() {
     try{
        
       
-       fetch("http://localhost:4000/authenticate_user", {
+       fetch("http://localhost:5000/authenticate_user", {
         method: "GET", 
         credentials: 'include',
         headers:{'Content-Type': 'application/json',

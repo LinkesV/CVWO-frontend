@@ -43,9 +43,9 @@ function SignUp() {
          if(check){
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
 
-          fetch("http://localhost:4000/register", {
+          fetch("http://localhost:5000/register", {
             method: "POST", 
             credentials: 'include',
             headers: requestHeaders,

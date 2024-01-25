@@ -23,7 +23,7 @@ function NavigationBar() {
     
     const navigate: NavigateFunction = useNavigate();
     const logoutHandler = ()=>{
-        fetch("http://localhost:4000/logout", {
+        fetch("http://localhost:5000/logout", {
         method: "GET", 
         credentials: 'include',
         headers:{
@@ -39,9 +39,9 @@ function NavigationBar() {
 
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set('Content-Type', 'application/json');
-    requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+    requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
     useEffect(()=>{
-      fetch("http://localhost:4000/forum_threads", {
+      fetch("http://localhost:5000/forum_threads", {
       method: "GET", 
       credentials: 'include',
       headers:requestHeaders,

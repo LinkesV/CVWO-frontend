@@ -17,7 +17,7 @@ function ViewComments() {
 
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set('Content-Type', 'application/json');
-    requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+    requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
 
     const select:TypedUseSelectorHook<RootState> = useSelector;
     const currentuser = select(state=>(state.user.userid));
@@ -32,10 +32,10 @@ function ViewComments() {
       try{
           const requestHeaders: HeadersInit = new Headers();
           requestHeaders.set('Content-Type', 'application/json');
-          requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+          requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
        
 
-        fetch(`http://localhost:4000/comments/${comment_id}`, {
+        fetch(`http://localhost:5000/comments/${comment_id}`, {
           method: "DELETE", 
           credentials: 'include',
           headers:requestHeaders,
@@ -62,9 +62,9 @@ function ViewComments() {
         try{
             const requestHeaders: HeadersInit = new Headers();
             requestHeaders.set('Content-Type', 'application/json');
-            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+            requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
   
-          fetch(`http://localhost:4000/comments/${comment_id}`, {
+          fetch(`http://localhost:5000/comments/${comment_id}`, {
             method: "PUT", 
             credentials: 'include',
             headers:requestHeaders,

@@ -13,11 +13,11 @@ function ViewPost() {
   const dispatch = useDispatch();
   const requestHeaders: HeadersInit = new Headers();
   requestHeaders.set('Content-Type', 'application/json');
-  requestHeaders.set('Access-Control-Allow-Origin','http://localhost:4000');
+  requestHeaders.set('Access-Control-Allow-Origin','http://localhost:5000');
 
   useEffect(()=>{
     try{
-      fetch("http://localhost:4000/comments", {
+      fetch("http://localhost:5000/comments", {
         method: "GET", 
         credentials: 'include',
         headers:requestHeaders,
